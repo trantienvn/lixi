@@ -24,8 +24,8 @@
         </button>
             </div>
         </div>
-        <footer id="create-new" class="fixed bottom-2 z-10 right-4 text-white text-xs cursor-pointer">Tạo link xin lì xì :D
-    </footer>
+        <!--<footer id="create-new" class="fixed bottom-2 z-10 right-4 text-white text-xs cursor-pointer">Tạo link xin lì xì :D
+    </footer>-->
     </body>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
@@ -121,11 +121,11 @@
 
         $("#yes").click(function() {
             Swal.fire({
-                title: "Đúng là bạn iu của tui hehe",
+                title: "Đúng là bạn iu dấu của tui hehe <33",
                 html: true,
                 width: 600,
                 padding: "3em",
-                html: `<div>STK đây nha:</div><div>${bank ?? ""}</div><div>${stk ?? "*********"}</div>`,
+                html: `<div>STK đây nha:</div><img id="qrcode" class="w-48 m-auto" src="https://img.vietqr.io/image/970415-101880291746-compact.png" alt=""/>`,
                 imageUrl: "cheems-3.png",
                 imageWidth: 200,
                 showCancelButton: false,
@@ -137,7 +137,7 @@
             });
         });
 
-        $("#create-new").click(function() {
+        /*$("#create-new").click(function() {
             Swal.fire({
                 title: "Nhập thông tin",
                 html: '<input id="stk" class="swal2-input" placeholder="STK của bạn" required>' + '<input id="bankName" class="swal2-input" placeholder="Tên ngân hàng" required>',
@@ -175,6 +175,6 @@
                 }
                 ,
             });
-        });
+        });*/
     </script>
 </html>
