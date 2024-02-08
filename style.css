@@ -1,5 +1,5 @@
 .wrapper {
-    background-image: url("/bg2.jpg");
+    background-image: url("bg.jpg");
     position: relative;
     background-size: auto;
 }
